@@ -1,4 +1,4 @@
-#IZG projekt implementace gpu
+# IZG projekt implementace gpu
 
 více informací v souboru: [start_here.html](start_here.html)
 
