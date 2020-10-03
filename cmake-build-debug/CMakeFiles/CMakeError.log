@@ -1,0 +1,650 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9a02a/fast && /usr/bin/make -f CMakeFiles/cmTC_9a02a.dir/build.make CMakeFiles/cmTC_9a02a.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a02a.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -std=gnu99 -o CMakeFiles/cmTC_9a02a.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+make[1]: *** [CMakeFiles/cmTC_9a02a.dir/build.make:66: CMakeFiles/cmTC_9a02a.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9a02a/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_52852/fast && /usr/bin/make -f CMakeFiles/cmTC_52852.dir/build.make CMakeFiles/cmTC_52852.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52852.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -std=gnu99 -o CMakeFiles/cmTC_52852.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_52852.dir/build.make:66: CMakeFiles/cmTC_52852.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_52852/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0a29f/fast && /usr/bin/make -f CMakeFiles/cmTC_0a29f.dir/build.make CMakeFiles/cmTC_0a29f.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a29f.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_ALTIVEC -maltivec   -std=gnu99 -o CMakeFiles/cmTC_0a29f.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_0a29f.dir/build.make:66: CMakeFiles/cmTC_0a29f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0a29f/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_68856/fast && /usr/bin/make -f CMakeFiles/cmTC_68856.dir/build.make CMakeFiles/cmTC_68856.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68856.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_68856.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_68856
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68856.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_68856.dir/CheckFunctionExists.c.o  -o cmTC_68856 
+/usr/bin/ld: CMakeFiles/cmTC_68856.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_68856.dir/build.make:87: cmTC_68856] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_68856/fast] Error 2
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bc428/fast && /usr/bin/make -f CMakeFiles/cmTC_bc428.dir/build.make CMakeFiles/cmTC_bc428.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc428.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_bc428.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bc428
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc428.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_bc428.dir/CheckFunctionExists.c.o  -o cmTC_bc428 
+/usr/bin/ld: CMakeFiles/cmTC_bc428.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bc428.dir/build.make:87: cmTC_bc428] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bc428/fast] Error 2
+
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7f0fd/fast && /usr/bin/make -f CMakeFiles/cmTC_7f0fd.dir/build.make CMakeFiles/cmTC_7f0fd.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f0fd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_7f0fd.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7f0fd
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f0fd.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev    -rdynamic CMakeFiles/cmTC_7f0fd.dir/CheckFunctionExists.c.o  -o cmTC_7f0fd 
+/usr/bin/ld: CMakeFiles/cmTC_7f0fd.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strrev'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7f0fd.dir/build.make:87: cmTC_7f0fd] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7f0fd/fast] Error 2
+
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e5d42/fast && /usr/bin/make -f CMakeFiles/cmTC_e5d42.dir/build.make CMakeFiles/cmTC_e5d42.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5d42.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_e5d42.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e5d42
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5d42.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr    -rdynamic CMakeFiles/cmTC_e5d42.dir/CheckFunctionExists.c.o  -o cmTC_e5d42 
+/usr/bin/ld: CMakeFiles/cmTC_e5d42.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strupr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e5d42.dir/build.make:87: cmTC_e5d42] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e5d42/fast] Error 2
+
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d288/fast && /usr/bin/make -f CMakeFiles/cmTC_2d288.dir/build.make CMakeFiles/cmTC_2d288.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d288.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_2d288.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2d288
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d288.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr    -rdynamic CMakeFiles/cmTC_2d288.dir/CheckFunctionExists.c.o  -o cmTC_2d288 
+/usr/bin/ld: CMakeFiles/cmTC_2d288.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strlwr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2d288.dir/build.make:87: cmTC_2d288] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2d288/fast] Error 2
+
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_835eb/fast && /usr/bin/make -f CMakeFiles/cmTC_835eb.dir/build.make CMakeFiles/cmTC_835eb.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_835eb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_835eb.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_835eb
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_835eb.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_835eb.dir/CheckFunctionExists.c.o  -o cmTC_835eb 
+/usr/bin/ld: CMakeFiles/cmTC_835eb.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `itoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_835eb.dir/build.make:87: cmTC_835eb] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_835eb/fast] Error 2
+
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ee06a/fast && /usr/bin/make -f CMakeFiles/cmTC_ee06a.dir/build.make CMakeFiles/cmTC_ee06a.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee06a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_ee06a.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ee06a
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee06a.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa    -rdynamic CMakeFiles/cmTC_ee06a.dir/CheckFunctionExists.c.o  -o cmTC_ee06a 
+/usr/bin/ld: CMakeFiles/cmTC_ee06a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_ltoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ee06a.dir/build.make:87: cmTC_ee06a] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ee06a/fast] Error 2
+
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_42ff4/fast && /usr/bin/make -f CMakeFiles/cmTC_42ff4.dir/build.make CMakeFiles/cmTC_42ff4.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42ff4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_42ff4.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_42ff4
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42ff4.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa    -rdynamic CMakeFiles/cmTC_42ff4.dir/CheckFunctionExists.c.o  -o cmTC_42ff4 
+/usr/bin/ld: CMakeFiles/cmTC_42ff4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_uitoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_42ff4.dir/build.make:87: cmTC_42ff4] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_42ff4/fast] Error 2
+
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_afe95/fast && /usr/bin/make -f CMakeFiles/cmTC_afe95.dir/build.make CMakeFiles/cmTC_afe95.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_afe95.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_afe95.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_afe95
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe95.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa    -rdynamic CMakeFiles/cmTC_afe95.dir/CheckFunctionExists.c.o  -o cmTC_afe95 
+/usr/bin/ld: CMakeFiles/cmTC_afe95.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_ultoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_afe95.dir/build.make:87: cmTC_afe95] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_afe95/fast] Error 2
+
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6c6ed/fast && /usr/bin/make -f CMakeFiles/cmTC_6c6ed.dir/build.make CMakeFiles/cmTC_6c6ed.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c6ed.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_6c6ed.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6c6ed
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c6ed.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa    -rdynamic CMakeFiles/cmTC_6c6ed.dir/CheckFunctionExists.c.o  -o cmTC_6c6ed 
+/usr/bin/ld: CMakeFiles/cmTC_6c6ed.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_i64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6c6ed.dir/build.make:87: cmTC_6c6ed] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6c6ed/fast] Error 2
+
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_27649/fast && /usr/bin/make -f CMakeFiles/cmTC_27649.dir/build.make CMakeFiles/cmTC_27649.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27649.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_27649.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_27649
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27649.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa    -rdynamic CMakeFiles/cmTC_27649.dir/CheckFunctionExists.c.o  -o cmTC_27649 
+/usr/bin/ld: CMakeFiles/cmTC_27649.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_ui64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_27649.dir/build.make:87: cmTC_27649] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_27649/fast] Error 2
+
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_04e88/fast && /usr/bin/make -f CMakeFiles/cmTC_04e88.dir/build.make CMakeFiles/cmTC_04e88.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04e88.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_04e88.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_04e88
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04e88.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp    -rdynamic CMakeFiles/cmTC_04e88.dir/CheckFunctionExists.c.o  -o cmTC_04e88 
+/usr/bin/ld: CMakeFiles/cmTC_04e88.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_04e88.dir/build.make:87: cmTC_04e88] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_04e88/fast] Error 2
+
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f14c0/fast && /usr/bin/make -f CMakeFiles/cmTC_f14c0.dir/build.make CMakeFiles/cmTC_f14c0.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f14c0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_f14c0.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f14c0
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f14c0.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp    -rdynamic CMakeFiles/cmTC_f14c0.dir/CheckFunctionExists.c.o  -o cmTC_f14c0 
+/usr/bin/ld: CMakeFiles/cmTC_f14c0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f14c0.dir/build.make:87: cmTC_f14c0] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f14c0/fast] Error 2
+
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a5ca/fast && /usr/bin/make -f CMakeFiles/cmTC_7a5ca.dir/build.make CMakeFiles/cmTC_7a5ca.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a5ca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_7a5ca.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7a5ca
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a5ca.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_7a5ca.dir/CheckFunctionExists.c.o  -o cmTC_7a5ca 
+/usr/bin/ld: CMakeFiles/cmTC_7a5ca.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7a5ca.dir/build.make:87: cmTC_7a5ca] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7a5ca/fast] Error 2
+
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_88602/fast && /usr/bin/make -f CMakeFiles/cmTC_88602.dir/build.make CMakeFiles/cmTC_88602.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88602.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_88602.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_88602
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88602.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_88602.dir/CheckFunctionExists.c.o  -o cmTC_88602  -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_88602.dir/build.make:87: cmTC_88602] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_88602/fast] Error 2
+
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07131/fast && /usr/bin/make -f CMakeFiles/cmTC_07131.dir/build.make CMakeFiles/cmTC_07131.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07131.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_07131.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘alloca’; expected ‘void *(long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_07131
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07131.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca    -rdynamic CMakeFiles/cmTC_07131.dir/CheckFunctionExists.c.o  -o cmTC_07131 
+/usr/bin/ld: CMakeFiles/cmTC_07131.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x1f): undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_07131.dir/build.make:87: cmTC_07131] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_07131/fast] Error 2
+
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8b669/fast && /usr/bin/make -f CMakeFiles/cmTC_8b669.dir/build.make CMakeFiles/cmTC_8b669.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b669.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_8b669.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b669
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b669.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_8b669.dir/CheckFunctionExists.c.o  -o cmTC_8b669 
+/usr/bin/ld: CMakeFiles/cmTC_8b669.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8b669.dir/build.make:87: cmTC_8b669] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8b669/fast] Error 2
+
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4460e/fast && /usr/bin/make -f CMakeFiles/cmTC_4460e.dir/build.make CMakeFiles/cmTC_4460e.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4460e.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_4460e.dir/CheckIncludeFile.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4460e.dir/build.make:66: CMakeFiles/cmTC_4460e.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4460e/fast] Error 2
+
+
+
+Determining if the include file sndio.h exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3b45/fast && /usr/bin/make -f CMakeFiles/cmTC_e3b45.dir/build.make CMakeFiles/cmTC_e3b45.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3b45.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_e3b45.dir/CheckIncludeFile.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sndio.h: No such file or directory
+    1 | #include <sndio.h>
+      |          ^~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e3b45.dir/build.make:66: CMakeFiles/cmTC_e3b45.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e3b45/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f299/fast && /usr/bin/make -f CMakeFiles/cmTC_4f299.dir/build.make CMakeFiles/cmTC_4f299.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4f299.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -std=gnu99 -o CMakeFiles/cmTC_4f299.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4f299.dir/build.make:66: CMakeFiles/cmTC_4f299.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4f299/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_00515/fast && /usr/bin/make -f CMakeFiles/cmTC_00515.dir/build.make CMakeFiles/cmTC_00515.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00515.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_OPENGLES_V1   -std=gnu99 -o CMakeFiles/cmTC_00515.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:16: fatal error: GLES/gl.h: No such file or directory
+    2 |       #include <GLES/gl.h>
+      |                ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_00515.dir/build.make:66: CMakeFiles/cmTC_00515.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_00515/fast] Error 2
+
+
+Source file was:
+
+      #include <GLES/gl.h>
+      #include <GLES/glext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1b5e7/fast && /usr/bin/make -f CMakeFiles/cmTC_1b5e7.dir/build.make CMakeFiles/cmTC_1b5e7.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b5e7.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_VIVANTE_VDK   -std=gnu99 -o CMakeFiles/cmTC_1b5e7.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_1b5e7.dir/build.make:66: CMakeFiles/cmTC_1b5e7.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1b5e7/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5edd1/fast && /usr/bin/make -f CMakeFiles/cmTC_5edd1.dir/build.make CMakeFiles/cmTC_5edd1.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5edd1.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_VIVANTE_EGL_FB   -std=gnu99 -o CMakeFiles/cmTC_5edd1.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_5edd1.dir/build.make:66: CMakeFiles/cmTC_5edd1.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5edd1/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ddd5a/fast && /usr/bin/make -f CMakeFiles/cmTC_ddd5a.dir/build.make CMakeFiles/cmTC_ddd5a.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ddd5a.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_ddd5a.dir/CheckIncludeFile.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: fcitx/frontend.h: No such file or directory
+    1 | #include <fcitx/frontend.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ddd5a.dir/build.make:66: CMakeFiles/cmTC_ddd5a.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ddd5a/fast] Error 2
+
+
+
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1ed15/fast && /usr/bin/make -f CMakeFiles/cmTC_1ed15.dir/build.make CMakeFiles/cmTC_1ed15.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ed15.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_1ed15.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1ed15
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed15.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_1ed15.dir/CheckFunctionExists.c.o  -o cmTC_1ed15  -lusbhid 
+/usr/bin/ld: cannot find -lusbhid
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1ed15.dir/build.make:87: cmTC_1ed15] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1ed15/fast] Error 2
+
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1d4b0/fast && /usr/bin/make -f CMakeFiles/cmTC_1d4b0.dir/build.make CMakeFiles/cmTC_1d4b0.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d4b0.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_1d4b0.dir/CheckIncludeFile.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libusb.h: No such file or directory
+    1 | #include <libusb.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_1d4b0.dir/build.make:66: CMakeFiles/cmTC_1d4b0.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1d4b0/fast] Error 2
+
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e515a/fast && /usr/bin/make -f CMakeFiles/cmTC_e515a.dir/build.make CMakeFiles/cmTC_e515a.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e515a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_e515a.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e515a
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e515a.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_e515a.dir/CheckFunctionExists.c.o  -o cmTC_e515a  -lusb 
+/usr/bin/ld: CMakeFiles/cmTC_e515a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `hid_init'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e515a.dir/build.make:87: cmTC_e515a] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e515a/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9031b/fast && /usr/bin/make -f CMakeFiles/cmTC_9031b.dir/build.make CMakeFiles/cmTC_9031b.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9031b.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_USBHID  -DHAVE_USB_H   -std=gnu99 -o CMakeFiles/cmTC_9031b.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:10:19: fatal error: dev/usb/usb.h: No such file or directory
+   10 |         # include <dev/usb/usb.h>
+      |                   ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_9031b.dir/build.make:66: CMakeFiles/cmTC_9031b.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9031b/fast] Error 2
+
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e829c/fast && /usr/bin/make -f CMakeFiles/cmTC_e829c.dir/build.make CMakeFiles/cmTC_e829c.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e829c.dir/src.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DHAVE_PTHREAD_NP_H  -DHAVE_USB_H -D_REENTRANT -pthread   -std=gnu99 -o CMakeFiles/cmTC_e829c.dir/src.c.o   -c /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:20: fatal error: pthread_np.h: No such file or directory
+    3 |           #include <pthread_np.h>
+      |                    ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e829c.dir/build.make:66: CMakeFiles/cmTC_e829c.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e829c/fast] Error 2
+
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a6c08/fast && /usr/bin/make -f CMakeFiles/cmTC_a6c08.dir/build.make CMakeFiles/cmTC_a6c08.dir/build
+make[1]: Entering directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6c08.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -DHAVE_USB_H -D_REENTRANT -pthread   -o CMakeFiles/cmTC_a6c08.dir/CheckFunctionExists.c.o   -c /var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a6c08
+/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6c08.dir/link.txt --verbose=1
+/usr/bin/cc  -idirafter /home/zen/Documents/izg/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -DHAVE_USB_H -D_REENTRANT -pthread    -rdynamic CMakeFiles/cmTC_a6c08.dir/CheckFunctionExists.c.o  -o cmTC_a6c08 
+/usr/bin/ld: CMakeFiles/cmTC_a6c08.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `pthread_set_name_np'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a6c08.dir/build.make:87: cmTC_a6c08] Error 1
+make[1]: Leaving directory '/home/zen/Documents/izg/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a6c08/fast] Error 2
+
+
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="BasicCamera"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\ArgumentViewer\;CMake Files\BasicCamera\;CMake Files\MealyMachine\;CMake Files\SDL2-2.0.10\;CMake Files\SDL2-2.0.10\cmake\;CMake Files\SDL2-2.0.10\include\;CMake Files\TxtUtils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zen/Documents/izg/cmake-build-debug/BasicCamera"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BasicCamera">
+				<Option output="/home/zen/Documents/izg/cmake-build-debug/BasicCamera/libBasicCamerad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zen/Documents/izg/cmake-build-debug/BasicCamera"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zen/Documents/izg/cmake-build-debug/BasicCamera"/>
+					<Add directory="/home/zen/Documents/izg/BasicCamera"/>
+					<Add directory="/home/zen/Documents/izg/BasicCamera/src"/>
+					<Add directory="/home/zen/Documents/izg/glm-0.9.9.6"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 BasicCamera"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BasicCamera/fast">
+				<Option output="/home/zen/Documents/izg/cmake-build-debug/BasicCamera/libBasicCamerad.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zen/Documents/izg/cmake-build-debug/BasicCamera"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zen/Documents/izg/cmake-build-debug/BasicCamera"/>
+					<Add directory="/home/zen/Documents/izg/BasicCamera"/>
+					<Add directory="/home/zen/Documents/izg/BasicCamera/src"/>
+					<Add directory="/home/zen/Documents/izg/glm-0.9.9.6"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../include/c++/9.3.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 BasicCamera/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/zen/Documents/izg/cmake-build-debug/BasicCamera/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/Camera.h">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/FreeLookCamera.cpp">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/FreeLookCamera.h">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/Fwd.h">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/OrbitCamera.cpp">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/OrbitCamera.h">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/PerspectiveCamera.cpp">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/src/BasicCamera/PerspectiveCamera.h">
+			<Option target="BasicCamera"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/ArgumentViewer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ArgumentViewer\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/ArgumentViewer/CMakeUtils.cmake">
+			<Option virtualFolder="CMake Files\ArgumentViewer\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\BasicCamera\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/BasicCamera/CMakeUtils.cmake">
+			<Option virtualFolder="CMake Files\BasicCamera\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/MealyMachine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MealyMachine\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/MealyMachine/CMakeUtils.cmake">
+			<Option virtualFolder="CMake Files\MealyMachine\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/SDL2.spec.in">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/sdl2-config.in">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/sdl2.pc.in">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/cmake/macros.cmake">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/cmake/sdlchecks.cmake">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\cmake\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/SDL2-2.0.10/include/SDL_config.h.cmake">
+			<Option virtualFolder="CMake Files\SDL2-2.0.10\include\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/TxtUtils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\TxtUtils\"/>
+		</Unit>
+		<Unit filename="/home/zen/Documents/izg/TxtUtils/CMakeUtils.cmake">
+			<Option virtualFolder="CMake Files\TxtUtils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

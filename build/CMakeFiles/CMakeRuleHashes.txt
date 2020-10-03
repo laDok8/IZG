@@ -1,0 +1,16 @@
+# Hashes of file build rules.
+13f678a5aa6ad2ba8308e72657514f02 SDL2-2.0.10/CMakeFiles/uninstall
+b31a857de00b7c7970ac647e5f386af3 SDL2-2.0.10/wayland-generated-protocols/org-kde-kwin-server-decoration-manager-client-protocol.h
+cad9080490eaa6d0b80e76d25d66809b SDL2-2.0.10/wayland-generated-protocols/org-kde-kwin-server-decoration-manager-protocol.c
+589bc601ae0345950e3faed8d8daa8d9 SDL2-2.0.10/wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+9c5410f7796bb24cf54524e3a43b0f73 SDL2-2.0.10/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+3dcc4d369d851f5f300d7d1c9a614411 SDL2-2.0.10/wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
+391a5ebd6630c1fdfecc0fde5fe39de9 SDL2-2.0.10/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+cccfad27972439aa29c64f59a960b04f SDL2-2.0.10/wayland-generated-protocols/wayland-client-protocol.h
+bc0b2575d22266a1f6209c0740bbd500 SDL2-2.0.10/wayland-generated-protocols/wayland-protocol.c
+f609a1a572afffea43a45076b9377d77 SDL2-2.0.10/wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+be1d4423ed356d8f33c9cdb46147e340 SDL2-2.0.10/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+2488becae6d08941c02e2013f02a7476 SDL2-2.0.10/wayland-generated-protocols/xdg-shell-client-protocol.h
+507bedb2d7169ab20410a484dbffe93f SDL2-2.0.10/wayland-generated-protocols/xdg-shell-protocol.c
+d59c69001e300480b892d7f45e885349 SDL2-2.0.10/wayland-generated-protocols/xdg-shell-unstable-v6-client-protocol.h
+634b8cf08e709183b6dd89d411032d8e SDL2-2.0.10/wayland-generated-protocols/xdg-shell-unstable-v6-protocol.c
